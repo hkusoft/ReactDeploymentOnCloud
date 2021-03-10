@@ -4,7 +4,15 @@
 
 #### Github repo: https://github.com/DavidKou/ReactDeploymentOnCloud/tree/master/Firebase
 
+## Create react app
 
+```
+npx create-react-app project-name
+cd project-name
+
+yarn
+yarn start
+```
 
 ## Install Firebase tools CLI
 
@@ -21,8 +29,8 @@ firebase login
 
 You will be redirected to firebase login page. Input your account there.
 
+![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Firebase/snapshots/login.png?raw=true)
 
-![](https://imgur.com/DvtEymh.png)
 
 <hr/>
 
@@ -32,13 +40,14 @@ Note: you can also create a project using Firebase console, but using CLI is mor
 
 1. Run the below command
 ```
-cd demo
+cd project-name
 firebase init
 ```
 
 You need cd into the folder where React App is created. Follow the instructions as shown below:
 
-![](https://imgur.com/MdAGEqq.png)
+![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Firebase/snapshots/init.png?raw=true)
+
 
 2. Confirm YES.
 3. Create a new Firebase project, e.g. "xyz-firebase-react" 
@@ -50,10 +59,11 @@ You need cd into the folder where React App is created. Follow the instructions 
 
 <hr/>
 
+
 ## Build react app locally
 
 ```
-cd demo
+cd project-name
 yarn build
 ```
 This will package the react app, and the output is in the *build* sub-folder now.
@@ -66,9 +76,11 @@ This will package the react app, and the output is in the *build* sub-folder now
 firebase deploy
 ```
 
-![](https://imgur.com/MtFyfEF.png)
+![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Firebase/snapshots/deploy.png?raw=true)
 
-Open a browser window, and type the url: https://xyz-react-deployment.web.app/
-Now, your app is deployed to Firebase!
+Open a browser window, and type the url: https://xyz-firebase-react.web.app/
 
-![](https://imgur.com/7pPf0UL.png)
+![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Firebase/snapshots/result.png?raw=true)
+
+Now, your app is deployed to Firebase! Happy coding, happy deploying!
+
