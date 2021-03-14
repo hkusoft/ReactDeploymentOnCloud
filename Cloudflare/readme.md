@@ -1,7 +1,13 @@
-﻿# Deploy React Apps on Cloudflare Pages
+[Cloudflare](https://www.cloudflare.com/) is an American web infrastructure and website security company that provides content delivery network services, DDoS mitigation, Internet security, and distributed domain name server services.
 
-#### Demo Site: https://cloudflare.xyz-cloudflare.workers.dev/
-#### Github repo: https://github.com/DavidKou/ReactDeploymentOnCloud/tree/master/Cloudflare 
+[Cloudflare](https://www.cloudflare.com/) offers *free* host services for React SPA deployment. Below is how to do this with trivial steps!
+
+# Deploy React Apps on Cloudflare
+
+- Online Demo [here](https://cloudflare.xyz-cloudflare.workers.dev/)
+- Github repo [here]( https://github.com/DavidKou/ReactDeploymentOnCloud/tree/master/Cloudflare) 
+
+![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Cloudflare/snapshots/result.png?raw=true)
 
 ## Create react app
 
@@ -18,7 +24,7 @@ yarn start
 - Visit https://cloudflare.com/
 - Create an account there
 
-## Gete an API token
+## Get the API token
 
 To get started, log into the Cloudflare Dashboard and go to User Profile -> API Tokens or simply click [here](https://dash.cloudflare.com/profile/api-tokens). From the API Token home screen select Create Token.
 
@@ -36,16 +42,18 @@ npm i @cloudflare/wrangler -g
 wrangler login
 ```
 
-You will be redirected to Cloudflare login page. Input your account there.
+You will be redirected to the Cloudflare login page. Input your account there.
 
+Step I: <br/>
 ![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Cloudflare/snapshots/login0.png?raw=true)
 
-![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Cloudflare/snapshots/login1.png?raw=true)
-
+Step II:  <br/>
 ![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Cloudflare/snapshots/login2.png?raw=true)
 
+Step III:  <br/>
 ![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Cloudflare/snapshots/login3.png?raw=true)
 
+Step IV:  <br/>
 ![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Cloudflare/snapshots/login4.png?raw=true)
 
 
@@ -60,7 +68,18 @@ Run below command to get your Account-ID
 ```
 wrangler whoami
 ```
+
+You will see output as below:
+
+```    
++--------------------------+----------------------------------+
+| Account Name             | Account ID                       |
++--------------------------+----------------------------------+
+| xxxx@gmail.com's Account | abcdefgc13e701c1b4410ad96e3fefe8 |
++--------------------------+----------------------------------+
+```
 <hr/>
+
 
 
 ## Init a Cloudflare project
@@ -85,7 +104,7 @@ account_id = "somestringofyouraccoundid"    # ↫ Edit this value
 bucket = "./build"                          # ↫ Edit this value
 entry-point = "workers-site"
 ```
-
+<hr/>
 
 ## Build react app locally
 
@@ -107,7 +126,7 @@ To preview the deployment on Cloudflare, try below command
 ```
 wrangler preview
 ```
-
+<hr/>
 
 ## Deploy react app to Cloudflare
 
@@ -146,10 +165,10 @@ wrangler publish
  https://cloudflare.xyz-cloudflare.workers.dev
  Deleting stale files...
 ```
+<hr/>
 
 Open a browser window, and type the url: https://cloudflare.xyz-cloudflare.workers.dev/
-
-![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Cloudflare/snapshots/result.png?raw=true)
-
+<hr/>
 Now, your app is deployed to Cloudflare! Happy coding, happy deploying!
+
 

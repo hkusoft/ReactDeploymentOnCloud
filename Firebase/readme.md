@@ -1,8 +1,12 @@
-﻿# Deploy React Apps on Firebase
+[Firebase](Firebasefirebase.google.com) is a platform developed by Google for creating mobile and web applications. It was originally an independent company founded in 2011. In 2014, Google acquired the platform and it is now their flagship offering for app development.
 
-#### Demo Site: https://xyz-firebase-react.web.app/
+Firebase offers free host services for React SPA deployment. Below is how to do this with trivial steps!
 
-#### Github repo: https://github.com/DavidKou/ReactDeploymentOnCloud/tree/master/Firebase
+ 
+ # Deploy React Apps on Firebase
+
+- Demo Site: https://xyz-firebase-react.web.app/
+- Github repo [here](https://github.com/DavidKou/ReactDeploymentOnCloud/tree/master/Firebase)
 
 ## Create react app
 
