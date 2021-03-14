@@ -1,0 +1,10 @@
+name = "cloudflare"
+type = "webpack"
+account_id = "f6287d9c13e701c1b4410ad96e3fefe8"
+workers_dev = true
+route = ""
+zone_id = ""
+
+[site]
+bucket = "./build"
+entry-point = "workers-site"
