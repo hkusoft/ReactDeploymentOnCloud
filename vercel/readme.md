@@ -3,7 +3,8 @@
  # Deploy React Apps on Vercel
 
 - Demo Site: https://xyz-vercel.vercel.app/
-- Github repo [here](https://github.com/DavidKou/ReactDeploymentOnCloud/tree/master/Vercel)
+- Github repo [here](https://github.com/DavidKou/ReactDeploymentOnCloud/tree/master/vercel)
+                     
 
 ## Create react app
 
@@ -32,10 +33,11 @@ vercel login
 
 You will be prompted to enter an email, where a link will redirect you to a verification page. Click the `VERIFY` button to proceed.
 
-![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Vercel/snapshots/login2.png?raw=true)
+![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/vercel/snapshots/login2.png?raw=true)
 
 After this, you will see below result in CLI:
-![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Vercel/snapshots/login1.png?raw=true)
+![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/vercel/snapshots/login1.png?raw=true)
+
 
 
 <hr/>
@@ -52,7 +54,7 @@ vercel
 
 You need cd into the folder where React App is created. Follow the instructions as shown below:
 
-![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Vercel/snapshots/init.png?raw=true)
+![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/vercel/snapshots/init.png?raw=true)
 
 
 2. Confirm YES.
@@ -67,6 +69,6 @@ After a few seconds, your app will be deployed to Vercel and a URL will be given
 
 Open a browser window, and type the url: https://xyz-vercel.vercel.app/
 
-![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/Vercel/snapshots/result.png?raw=true)
+![](https://github.com/DavidKou/ReactDeploymentOnCloud/blob/master/vercel/snapshots/result.png?raw=true)
 
 Now, your app is deployed to Vercel! Happy coding, happy deploying!
