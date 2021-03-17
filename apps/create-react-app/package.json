@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.1.10",
     "env-cmd": "^10.1.0",
     "react": "^17.0.1",
+    "react-code-blocks": "^0.0.8",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
@@ -15,13 +16,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-
     "start-fb": "env-cmd -f .env.firebase react-scripts start",
     "build-fb": "env-cmd -f .env.firebase react-scripts build && firebase deploy",
-
     "start-cf": "env-cmd -f .env.cloudflare react-scripts start",
     "build-cf": "env-cmd -f .env.cloudflare react-scripts build && wrangler publish",
-
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
